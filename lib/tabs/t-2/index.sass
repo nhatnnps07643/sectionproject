@@ -1,0 +1,88 @@
+@import ../../_includes
+
+.canhcam-tabs-2
+	+pad(2rem 0)
+	+media-breakpoint-up(lg)
+		+pad(4rem 0)
+	.nav-tabs
+		justify-content: center
+		border: 0
+		.nav-item
+			margin-right: .25rem
+			&:last-child
+				margin-right: 0
+			.nav-link
+				position: relative
+				border: 0
+				background: white
+				border: 1px solid color-get($mau,main)
+				+pad(.5rem 3rem)
+				+bor-rad(0)
+				text-transform: uppercase
+				+fz(0.92rem)
+				&.active
+					background: color-get($mau,main)
+					color: color-get($mau,trang)
+					&:after
+						width: calc(100% - 2px)
+						+pos(abs, null 1px 0 null)
+						background: darken(color-get($mau,trang),0%)
+	.tab-content
+		border-top: 0
+		.tab-pane
+			+pad(1rem)
+			a.icon
+				position: relative
+				font-family: 'Linearicons-Free'
+				&:after
+					
+					content: '\e87a'
+					display: block
+					+pos(abs,65% -50% null null)
+					transform: translateY(-50%)
+			.top-list
+				figure
+					position: relative
+					height: 100%
+					figcaption
+						+pos(abs,null null 0 0)
+						+pad(1.57rem 2rem)
+						max-width: 50%
+						background: #fffffff5
+						+media-breakpoint-down(xs)
+							max-width: 100%
+							+pad(0.7rem 1rem)
+			p
+				margin: 0
+				padding-top: 1.42rem
+				+fz(1.071rem)
+				color: color-get($mau,den)
+				+media-breakpoint-down(sm)
+					padding-top: 1rem
+			time
+				color: color-get($mau,time)
+				+fz(0.928rem)
+				+pad(0 0 1.3rem 0)
+				display: block
+				position: relative
+				&:after
+					+pos(abs,null null 0 0)
+					content: ''
+					display: block
+					width: 20%
+					height: 2px
+					background: color-get($mau,vien)
+			a.item
+				text-decoration: none
+				img
+					opacity: 0
+			.part-list
+				.new-info
+					+pad(1.5rem 0)
+					background: #F1F5F6
+					.item
+						+pad(0 2.1rem)
+				.mar-b
+					margin-bottom: 2.1rem
+					+media-breakpoint-down(md)
+						margin-bottom: 1.5rem

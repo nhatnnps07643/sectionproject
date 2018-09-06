@@ -1,0 +1,18 @@
+{
+    "SETUP": {
+        "index": {
+            "header": [
+                "header/h-14"
+            ],
+            "body": [
+                "banner/b-1",
+                "about/gallery",
+                "tabs/t-1",
+                "tabs/t-2"
+            ],
+            "footer": [
+                "footer/f-1"
+            ]
+        }
+    }
+}
